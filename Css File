@@ -1,0 +1,102 @@
+/* Css code to display custom posts in Grid format with Responsiveness */
+.ofs_post_container{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 25px;
+  margin: 0 0 15px 0;
+}
+@media all and (max-width:768px){
+	.ofs_post_container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.ofs_post_item:nth-child( even ){
+	box-shadow: 2px 25px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.prt_sqrt:before, .prt_type:before {
+    content: "\f0c8";
+    font-family: 'Font Awesome 5 Free';
+    margin-right:10px;
+	  color: #175151;
+}
+.prt_type:before{
+	content: "\f1d8";
+}
+.prt_sqrt:before {
+    content: "\f0c8";
+}
+.ofs_post_item .prt_sqrt, .ofs_post_item .prt_type{
+	  color: #175151;
+	  font-family: "Inria Sans";
+    font-size: 16px;
+}
+.ofs_post_item .post_description p {
+    font-family: "Inria Sans";
+    color: #000;
+    font-size: 16px;
+}
+.ofs_post_item .prt_price, .ofs_post_item .post_title a {
+    color: #000;
+    font-weight: 700;
+    font-family: "Maven Pro";
+    font-size: 18px;
+	  margin-bottom:15px;
+	 line-height: 28px;
+}
+.ofs_post_item .prt_price{
+    color: #175151;
+}
+.propery_ainfo{
+	display:flex;
+	flex-wrap:wrap;
+}
+.prt_type {
+    padding-right: 15px;
+    border-right: 3px solid #729899;
+    margin-right: 15px;
+    line-height: 16px;
+}
+.propery_image img {
+    border-radius: 12px;
+    transition: 2s;
+    height: 300px !important;
+    width: auto !important;
+    text-align: center;
+    object-fit: cover;
+}
+.ofs_post_item {
+    border: 1px solid #e3ece7;
+    border-radius: 12px;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.ofs_post_item:hover{
+box-shadow: 2px 25px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.propery_details {
+    padding: 0px 15px 15px 15px;
+}
+h2.post_title {
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.propery_image img:hover {
+    transition: 2s;
+    transform: scale(0.9);
+}
+.cusfield_margin{
+	margin-bottom:15px!important;
+}
+.page-numbers.current {
+    border-color: #175151;
+    color: #fff !important;
+    background: #175151;
+}
+.page-numbers, .page-numbers a {
+    padding: 5px 10px;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    background: #dddddd8f;
+    color: #000 !important;
+    border: 1px solid #ddd;
+} 
